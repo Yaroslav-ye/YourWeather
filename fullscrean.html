@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<title>YourWeather</title>
+  <link rel="stylesheet" href="weatherstyle.css">
+  <script src = "fullscrean.js"  defer></script>
+</head>
+<header>
+    <div class="grid-container-header">
+      <div class="header-space"></div>
+      <button class="header-square" id="day-0">
+          <h1 class="day" id="day0"></h1>
+       
+      </button>
+      
+
+      <div class="header-space"></div>
+      <button class="header-square" id="day-1">
+        <h1 class="day" id="day1"></h1>
+      </button>
+
+      <div class="header-space"></div>
+      <button class="header-square" id="day-2">
+        <h1 class="day" id="day2"></h1>
+      </button>
+
+      <div class="header-space"></div>
+      <button class="header-square" id="day-3">
+        <h1 class="day" id="day3"></h1>
+      </button>
+
+      <div class="header-space"></div>
+      <div class="header-space"></div>
+
+      <div class="header-space"></div>
+      <button class="header-ua" id="UA"></button>
+
+      <div class="header-space"></div>
+      <button class="header-en" id="EN"></button>
+        </div>
+</header>
+
+
+<body>
+
+  <div class="grid-body-container">
+
+    <div class="grid-side"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">
+    <div class="main-grid-container">
+
+      <div class="grid-item">
+        <div class = "point"></div>
+        <div class="linePoint2"></div>
+        </div>
+  
+      <div class="grid-item" >
+        <div style="position: relative;">
+          <img id = "icon0" class = "icon" src="sun.png"> 
+          <p id = "time0" class = "time">
+          Morning
+          </p>
+        </div>
+      </div>
+  
+      <div class="grid-item" style="margin-left: auto">
+        <button id="square0" name = "blue_sqare" class="square1" >
+          <p id = 0 class = "tempreture"></p>
+          <p id="w0" class="weatherDescription"></p>
+        </button>
+          
+      </div>  
+  
+  
+      <div class="grid-item">
+      </div>
+  
+  
+      <div class="grid-item">
+          <div class = "point"></div>
+          <div class="linePoint2"></div>
+          </div>
+    
+        <div class="grid-item" >
+          <div style="position: relative;">
+            <img id = "icon4" class = "icon" src="sun.png"> 
+            <p id = "time4" class = "time">
+            Morning
+            </p>
+          </div>
+        </div>
+    
+        <div class="grid-item" style="margin-left: auto">
+          <button id="square4" name = "blue_sqare" class="square1" >
+            <p id = 4 class = "tempreture"></p>
+            <p id="w4" class="weatherDescription"></p>
+          </button>
+            
+        </div>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="grid-item">
+        <div class = "point"></div>
+        <div class="linePoint1"></div>
+        <div class="linePoint2"></div>
+        </div>
+  
+      <div class="grid-item" >
+        <img id = "icon1" class="icon" src="sun.png" >
+        <p id = "time1" class = " time">Afternoon</p>
+      </div>
+  
+      <div class="grid-item" style="margin-left: auto">
+        <button id="square1" class="square2">
+          <p id= 1 class = "tempreture"></p>
+          <p id="w1" class="weatherDescription"></p>
+        </button>
+        
+      </div> 
+  
+  
+      <div class="grid-item">
+      </div>
+  
+  
+      <div class="grid-item">
+          <div class = "point"></div>
+          <div class="linePoint1"></div>
+          <div class="linePoint2"></div>
+          </div>
+    
+        <div class="grid-item" >
+          <img id = "icon5" class="icon" src="sun.png" >
+          <p id = "time5" class = " time">Afternoon</p>
+        </div>
+    
+        <div class="grid-item" style="margin-left: auto">
+          <button id="square5" class="square2">
+            <p id= 5 class = "tempreture"></p>
+            <p id="w5" class="weatherDescription"></p>
+          </button>
+          
+        </div> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="grid-item">
+        <div class = "point"></div>
+        <div class="linePoint1"></div>
+        <div class="linePoint2"></div>
+        </div>
+  
+      <div class="grid-item">
+          <img id = "icon2" class="icon" src="night.png" > 
+          <p id = "time2" class = " time">Evening</p>
+      </div>
+  
+      <div class="grid-item" style="margin-left: auto">
+        <button id="square2" class="square3">
+          <p id = 2 class = "tempreture"></p>
+          <p id="w2" class="weatherDescription"></p>
+        </button>
+        
+      </div> 
+  
+  
+      <div class="grid-item">
+      </div>
+  
+  
+      <div class="grid-item">
+          <div class = "point"></div>
+          <div class="linePoint1"></div>
+          <div class="linePoint2"></div>
+          </div>
+    
+        <div class="grid-item">
+            <img id = "icon6" class="icon" src="night.png" > 
+            <p id = "time6" class = " time">Evening</p>
+        </div>
+    
+        <div class="grid-item" style="margin-left: auto">
+          <button id="square6" class="square3">
+            <p id = 6 class = "tempreture"></p>
+            <p id="w6" class="weatherDescription"></p>
+          </button>
+          
+        </div> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="grid-item">
+        <div class = "point"></div>
+        <div class="linePoint1"></div>
+        </div>
+  
+      <div class="grid-item" >
+        <img id = "icon3" class="icon" src="cloud_night.png">
+        <p id = "time3" class = " time">Night</p>
+      </div>
+  
+      <div class="grid-item" style="margin-left: auto">
+        <button id="square3" class="square4">
+          <p id = 3 class = "tempreture"></p>
+          <p id="w3" class="weatherDescription"></p>
+        </button>
+        
+      </div> 
+  
+  
+      <div class="grid-item">
+      </div>
+  
+  
+      <div class="grid-item">
+          <div class = "point"></div>
+          <div class="linePoint1"></div>
+          </div>
+    
+        <div class="grid-item" >
+          <img id = "icon7" class="icon" src="cloud_night.png">
+          <p id = "time7" class = " time">Night</p>
+        </div>
+    
+        <div class="grid-item" style="margin-left: auto">
+          <button id="square7" class="square4">
+            <p id = 7 class = "tempreture"></p>
+            <p id="w7" class="weatherDescription"></p>
+          </button>
+          
+        </div> 
+    </div>
+  
+  
+  
+    
+  
+  
+  
+    <div class="bottom-grid-container-1">
+      <div class="bottom-grid-container-2">
+      <div class="grid-item">
+        <h2 class="details" id="details">Details</h2>
+      </div> 
+  
+      <div class="grid-item"></div>
+  
+  
+  
+      <div class="grid-item">
+            <img class="details_icon" src="wind.png">
+            <p id="wind" class="wind_text">0</p>
+            <p class="wind_name" id="wind_name">Wind</p>
+      </div>
+  
+      <div class="grid-item">
+          <img class="details_icon" src="hum.png">
+          <p id="humidity" class="humidity_text">1</p>
+          <p class="humidity_name" id="humidity_name">Humidity</p>
+      </div>
+  
+  
+  
+      <div class="grid-item"> 
+          <img class="details_icon" src="temp_kf.png">
+          <p id = "temp_kf" class="temp_kf_text">2</p>
+          <p class="temp_kf_name" id="temp_kf_name"> Temp KF </p>
+      </div>
+  
+  
+      <div class="grid-item">
+            <img class="details_icon" src="pressure.png">
+            <p id="pressure" class="pressure_text">3</p>
+            <p class="pressure_name" id="pressure_name">Presure</p>
+      </div>
+      </div>
+  
+      <div class="picture" >
+        <img id = "picture" class="time" src="PhSky.jpg">
+      </div>
+
+    </div>
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-side"></div>
+  </div>
+  
+
+
+</body>
+</html>
