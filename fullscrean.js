@@ -174,6 +174,7 @@ function getWeatherUa(position) {
     weatherDyspBott0();
     putNamesUA();
   getDateUa();
+  getCityUA(data);
   });
 }
 
@@ -191,6 +192,7 @@ function getWeatherEn(position) {
     weatherDyspBott0();
     putNamesEN();
   getDateEn();
+  getCityEN(data);
   });
 }
 
@@ -251,10 +253,16 @@ function weatherDyspUp()
         switch(mainWeather){
           case "Clear":
           mainWeather = "Чисте небо";
+          break;
           case "Clouds":
-          mainWeather = "Тучі";
+          mainWeather = "Хмари";
+          break;
           case "Snow":
           mainWeather = "Сніг";
+          break;
+          case "Rain":
+          mainWeather = "Дощ";
+          break;
         }
         document.getElementById("w" + i).innerHTML = mainWeather + ", " + weather[0].description;
       const hoursTime = weatherData.dt_txt.slice(11);
@@ -555,4 +563,20 @@ function getDataPoint(data){
   dataPoint = i -1;
 }
 
+function getCityEN(data){
+  const city = data.city;
+  const country = city.country;
+  const name = city.name;
+  console.log(city)
+  const yourPoint = "Country: "+ country + ", city: " + name;
+  document.getElementById("town").innerText = yourPoint;
+}
 
+function getCityUA(data){
+  const city = data.city;
+  const country = city.country;
+  const name = city.name;
+  console.log(city)
+  const yourPoint = "Країна: "+ country + ", місто: " + name;
+  document.getElementById("town").innerText = yourPoint;
+}
